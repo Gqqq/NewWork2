@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="NewWork2.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>装饰公司</title>
+    <meta content=" " name="keywords" />
+<meta content="" name="description" />
+<link rel="stylesheet" type="text/css" href="/style/css/style.css" />
+<script type="text/javascript" src="/style/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/style/js/lang-chi.min.js"></script>
+<script type="text/javascript" src="/style/js/common.min.js"></script>
+<script type="text/javascript" src="/style/js/overlay.min.js"></script>
+    <style type="text/css">
+        .footer p{ text-align:center; color:#FFF; font-size:12px}
+       #map {
+	    line-height: 50px;
+	    font-size: 13px;
+	    padding-left: 16px;
+	    color: #666666;
+        text-align:right;
+        padding-top:30px;
+            }
+        /*#add {
+        line-height: 30px;
+        font-size: 14px;
+        font-weight:bold;
+	    padding-left: 16px;
+	    color: #666666;
+         text-align:right;
+         padding-right:36px;
+         padding-top:5px;
+        }*/
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="doc">
+          <div id="hd">
+    <div class="clearfix pagetitle">
+      <h1 class="sitename"><a href="首页index.html" title="装饰公司"><img  class="ifixpng" src="style/images/logo.png"  alt="装饰公司" /></a></h1>
+      <%--<div class="language">
+        <div class="language-inner"><span>中文</span> | <a href="/?language=eng">English</a> </div>
+      </div>--%>
+        <%--<div id="add">
+            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">收藏本站</asp:LinkButton>
+        </div>--%>
+        <div id="map">
+            <span>当前位置：</span>
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+        </div>
+    </div>
+    <div class="clearfix sitenav">
+      <div class="clearfix menu-main">
+        <ul id="menuSitenav" class="clearfix">
+          <li class="first-item"> <a href="Index.aspx" class="home"><span>首页</span></a> </li>
+          <li > <a href="About.aspx" target="_self"><span>公司介绍</span></a> </li>
+          <li > <a href="Products.aspx?type=1" target="_self"><span>产品管理</span></a> </li>
+          <li > <a href="NewsList.aspx?type=1" target="_self"><span>新闻动态</span></a> </li>
+          <li > <a href="Job.aspx" target="_self"><span>人才招聘</span></a> </li>
+          <li > <a href="Contact.aspx" target="_self"><span>联系我们</span></a> </li>
+          <li  class="last-item"> <a href="ShowMessage.aspx" target="_self"><span>留言系统</span></a> </li>
+        </ul>
+      </div>
+    </div>
+    <div id="sys-banner">
+      <div id="banner-main" class="banner banner-main">
+        <div class="banner-inner">
+          <object type="application/x-shockwave-flash" data="img/pixviewer.swf?xml=<data><config><isShowTitle>0</isShowTitle><autoPlayTime>5</autoPlayTime></config><channel><item><link></link><image>images/0411412705084558.jpg</image><title></title></item><item><link></link><image>images/0411412792102139.jpg</image><title></title></item><item><link></link><image>images/0411412884267611.jpg</image><title></title></item></channel></data>"  height="360" width="100%">
+            <param name="movie" id="vcastr3" value="img/pixviewer.swf?xml=<data><config><isShowTitle>0</isShowTitle><autoPlayTime>5</autoPlayTime></config><channel><item><link></link><image>images/0411412705084558.jpg</image><title></title></item><item><link></link><image>images/0411412792102139.jpg</image><title></title></item><item><link></link><image>images/0411412884267611.jpg</image><title></title></item></channel></data>" />
+            <param name="wmode" value="opaque" />
+          </object>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div id="ft">
+    <div class="ft-inner">
+      <div class="ft-menu"  id="ft-menu"> <a href="Contact.aspx" target="_self">联系我们</a> | <a href="About.aspx" target="_self">公司介绍</a> | <a href="NewsList.aspx" target="_self">网站新闻</a> | <a href="ShowMessage.aspx" target="_self">留言系统</a> | <a>相关链接</a></div>
+      <div class="siteinfo" id="ft-siteinfo"> <a href="http://www.miibeian.gov.cn/"></a>
+      </div>
+        <div class="footer">
+            <p>京ICP备1111111号-1 京公网安备：11011111111111号</p>
+        </div>
+    </div>
+  </div>
+            </div>
+    </form>
+</body>
+</html>
